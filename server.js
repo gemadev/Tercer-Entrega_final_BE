@@ -111,7 +111,7 @@ app.use((error, req, res, next) => {
 
 
 
-const PORT = listen(process.env.PORT || 8080);
+const PORT = process.env.PORT || 8080;
 const MODO = yargArgs.modo;
 const nroCPUs = os.cpus().length;
 
